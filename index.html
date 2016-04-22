@@ -56,7 +56,7 @@
 					</P>      
 				</section>
 	
-			<section>
+			<!--section>
 					<h3>We are exploring the role of semantics on authoring a reproducible methodology reports</h3>
 					<p>
 						<ol>
@@ -67,22 +67,9 @@
 						<li>Discussion</li> 
 					</ol>
 					</p>
-			</section>
+			</section-->
 <!-- Example of nested vertical slides -->
 		<section>
-				<section>
-					<h2>Motivation</h2>
-					<br>
-			    </section>
-			    
-				<section>
-					<h3>Guidelines for reporting an experiment</h3> 
-					<ol>
-					<li>they can be imprecise or ambiguous due to the use of natural language</li> 
-					<li>no computational support</li>
-					</ol>
-					<img src="miape.jpeg" alt="Minimum Information Guidelines for Reporting a Proteomic Experiment." height="300" width="500">
-				</section>
 				
 				<section>
 					<h4>the quality of laboratory method descriptions</h4>
@@ -99,7 +86,14 @@
 					<p> <font size="6"> Hypothesis is:</font> <br> <br> <font color="red", size="7"> an explicit representation of the reporting guidelines can contribute to the quality of descriptions</font></p>
 					</section>
 				</section>
-
+<section>
+					<h3>Guidelines for reporting an experiment</h3> 
+					<ol>
+					<li>they can be imprecise or ambiguous due to the use of natural language</li> 
+					<li>no computational support</li>
+					</ol>
+					<img src="miape.jpeg" alt="Minimum Information Guidelines for Reporting a Proteomic Experiment." height="300" width="500">
+				</section>
 		</section> 			
 <!-- Example of nested vertical slides -->
 			<section>
@@ -115,11 +109,12 @@
 				
 			<section>
 				<section>
-					<h3>Method to extract and represent information</h3>
+					<h3>Method</h3>
 					<ol>
 						<li>select a use case -- MIAPE-CC </li>
-						<li>create vocabulary from MIAPE-CC reporting guidelines</li> 
-						<li>evaluation: we measured the occurrence of the extracted terms in the material and method sections.</li>  
+						<li> manually create vocabulary from MIAPE-CC reporting guidelines</li> 
+						<li> create a corpus: collect "material and method sections" from publications</li>
+						<li>measure the occurrence of extracted terms in the material and method sections.</li>  
 					</ol>
 			</section>
 			<section>
@@ -129,33 +124,20 @@
 				</section>
 			
 				<section>
-				<h3> creating vocabulary</h3>
+				<h3> Result</h3>
 	              <ol>
 
-	              <li>  scope: 7 classes were identified</li>
-	              <li>  terms were manually extracted from the guideline: <br>
-	              in total 83 terms were collected</li>
+	              <li>  7 classes were identified</li>
+	              <li>  in total 83 terms were collected</li>
+	              <li>40 terms never occurred in any of
+the method description sections (48%)</li>
+<li>43 remaining
+terms occurred at least in one method section (51%)</li>
 	              </ol>
 				</section>
-				<section>
-				 <h3> evaluation</h3>
-				 <ol>
-				 <li> create a corpus: collect "material and method sections" from publications</li>
-				 <li> conduct a term occurrence experiment </li>
-				 </ol>
-				 <br>
-				</section>
-			</section> 
+
 		
-		<section>
-			<section>
-					<h2>Results</h2>
-					<p>The word occurrence measurement showed that from 83 <br>
-terms in the vocabulary, 40 terms never occurred in any of<br>
-the method description sections (48%). The 43 remaining<br>
-terms occurred at least in one method section (51%)</p>
-					<br>
-			</section>
+
 			<section>				
 					<table border="1" style="width:80%">
  						 <tr>
@@ -202,37 +184,39 @@ terms occurred at least in one method section (51%)</p>
 					<br>
 			</section>
 				<section>
-					<h2>Explanations</h2>
-					<p> we consulted a domain expert and qualitatively analysed the data by inspecting the selected method sections.</p>
+					<h2>Explanation</h2>
 					<ol>
 					<li> authors do not report on the general information in the method sections </li>
-				<li> authors do not use the terminology related to the high level class <br>
+				<li> authors do not use high level classes <br>
 				<q>Branched sugar arabinon was obtained from British
 Sugar – Mcleary.</q></li>
 					<li>authors use synonyms</li>
 					</ol>
 				</section>
 			</section>	
-			<section>
+			<!--section>
 					<h2>Discussion</h2>
 					<ol>
 					<li>Descriptions often refer to another article in which the method is described, particularly for frequently reused methods. </li>
 					<li>Some information may only be mentioned in the title.  For example, the full name of the column may be mentioned in the title, and from then on they will only use the word ‘column’, as it should be clear what sort of column.</li>
 			</ol>
-			</section>
+			</sectio-->
+			
 			<section>
-			<h4> we argue that:</h4> 
-			  the reproducibility of an experimental method description is indebted to the existence of minimum information about that experiment
-			<br>
-			<h4>We learned that:</h4> 
-			  our present method does not recognize the synonyms, abbreviations, and instances. <br> <br> 
-			 <h4>limitations of our method:</h4>
-1. No semantic relations. <br>
-2. Low the sample size (N=62).<br>
-<h4>We conclude that:</h4> 
+			
+<h4>Conclusion</h4> 
  MIAPE is a good starting point for creating the required vocabulary, but it needs to be further elaborated.<br> 
 <!--h4> as the next step:<h4--> 
   <!--p>we extended the vocabulary by using the Rapid Ontology Creation (ROC+) method and knowledge acquisition method with scientists.</p--> 
+			</section>
+			
+			<section> 
+			<h3>The next step</h3> 
+				<ol>
+				<li>complete the vocabulary by involving the domain experts</li>
+				<li>extend the corpus</li>
+				<li>concept frequency measure</li>
+				</ol>
 			</section>
 
 				<section style="text-align: left;">
