@@ -32,6 +32,12 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		
+		<!--style>
+		img{
+			
+		}
+		</style-->
 	</head>
 
 	<body>
@@ -40,13 +46,12 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h3>Formalising Laboratory Reporting Guidelines with Semantic Web Technologies</h3>
+					<h3>Annotating the Context of Laboratory Experiments</h3>
 					<h4>a Case in Column Chromatography</h4>
 					<p>
-						<small>Created by <a href="https://www.cs.vu.nl/en/research/business-informatics/phd-students/dena-tahvildari.aspx">Dena Tahvildari</a> / <a href="http://twitter.com/DenaTahvildari">@demontanaa</a></small>
-					</p>
+						<small>Created by <a href="https://www.cs.vu.nl/en/research/business-informatics/phd-students/dena-tahvildari.aspx">Dena Tahvildari</a> </small></p>
 					<p>
-					     <small>PhD Candidate -- VU Amsterdam and Wageningen UR</small> 
+					     <small>PhD Candidate <br> VU Amsterdam and Wageningen UR</small> 
 					</p>
 					<p> 
 						<small> Supervisors: Prof. Guus Schreiber, Prof. Jan Top</small>
@@ -69,8 +74,14 @@
 					</p>
 			</section-->
 <!-- Example of nested vertical slides -->
+		
+	<section>
+	<img  src="labrep.jpeg" alt="annotated method" height="430" width="600">
+	</section>
+		
+		
+		
 		<section>
-				
 				<section>
 					<h4>the quality of laboratory method descriptions</h4>
 					<ol>
@@ -78,23 +89,43 @@
 						<li>they can be imprecise or ambiguous</li>
 					</ol>
 					<br>
-					<br>
-					<img src="badmethod.jpeg" alt="annotated method" height="500" width="378">
+					</section>
+					<section>
+					<img  src="badmethod.jpeg" alt="annotated method" height="600" width="420">
+					<!--img  style= "vertical-align:top"  src="miape.jpeg" alt="Minimum Information Guidelines for Reporting a Proteomic Experiment." height="300" width="500"-->
 					<br>
 					</section>
 					<section>
-					<p> <font size="6"> Hypothesis is:</font> <br> <br> <font color="red", size="7"> an explicit representation of the reporting guidelines can contribute to the quality of descriptions</font></p>
+					<p class="fragment grow">The reproducibility of the method is limited</p>
+					</section>
+					<section>
+					<h3>Minimum information guidelines for <br> documentation and report the laboratory experiment</h3> 
+					<ol>
+					<li>they can be imprecise or ambiguous due to the use of natural language</li> 
+					<li>no computational support</li>
+					</ol>
+					<br>
+					</section>
+					<section>
+					<img src="miape.jpeg" alt="Minimum Information Guidelines for Reporting a Proteomic Experiment." height="400" width="600">
+				</section>
+				<section>
+				<p class="fragment grow">Limited use</p> 
+				</section>
+				
+				</section>
+					<section>
+					<p> <font size="6"> Hypothesis is:</font> <br> <br> <!--font color="red", size="7"--> an explicit representation of the reporting guidelines can contribute to the quality of descriptions</font></p>
 					</section>
 				</section>
-<section>
+				<!--section>
 					<h3>Guidelines for reporting an experiment</h3> 
 					<ol>
 					<li>they can be imprecise or ambiguous due to the use of natural language</li> 
 					<li>no computational support</li>
 					</ol>
 					<img src="miape.jpeg" alt="Minimum Information Guidelines for Reporting a Proteomic Experiment." height="300" width="500">
-				</section>
-		</section> 			
+				</section-->		
 <!-- Example of nested vertical slides -->
 			<section>
 					<section>
@@ -106,15 +137,14 @@
 						<p class="fragment grow"> Can MIAPE reporting guidelines be used as a knowledge acquisition source to create ontology?</p>
 					</section>
 			  </section> 
-				
 			<section>
 				<section>
 					<h3>Method</h3>
 					<ol>
-						<li>select a use case -- MIAPE-CC </li>
-						<li> manually create vocabulary from MIAPE-CC reporting guidelines</li> 
-						<li> create a corpus: collect "material and method sections" from publications</li>
-						<li>measure the occurrence of extracted terms in the material and method sections.</li>  
+						<li> select a use case -- MIAPE-CC, </li>
+						<li> manually create vocabulary from MIAPE-CC reporting guidelines,</li> 
+						<li> create a corpus: collect "material and method sections" from publications,</li>
+						<li> measure the occurrence of extracted terms in the material and method sections,</li>  
 					</ol>
 			</section>
 			<section>
@@ -122,22 +152,23 @@
 				<p>Column chromatography experiment</p>
 					<img src="hplc.jpg" alt="Components of a chromtographic process." height="250" width="500">
 				</section>
+				
+				<section>
+				<ol>
+				<li>  7 classes were identified</li>
+	            <li>  in total 83 terms were collected</li>
+	            </ol>
+				</section>
 			
 				<section>
 				<h3> Result</h3>
 	              <ol>
-
 	              <li>  7 classes were identified</li>
 	              <li>  in total 83 terms were collected</li>
-	              <li>40 terms never occurred in any of
-the method description sections (48%)</li>
-<li>43 remaining
-terms occurred at least in one method section (51%)</li>
+	              <li>  40 terms never occurred in any of the method description sections (48%).</li>
+<li>43 remaining terms occurred at least in one method section (51%)</li>
 	              </ol>
 				</section>
-
-		
-
 			<section>				
 					<table border="1" style="width:80%">
  						 <tr>
@@ -176,23 +207,23 @@ terms occurred at least in one method section (51%)</li>
    					 	<td>6</td>
   					</tr>
   					<tr>
-    					<td>Column Output</td>
+    					<td>Column output</td>
    					 	<td>13</td>		
    					 	<td>9</td>
   					</tr>
 					</table>
 					<br>
 			</section>
-				<section>
+			<section>
 					<h2>Explanation</h2>
 					<ol>
 					<li> authors do not report on the general information in the method sections </li>
-				<li> authors do not use high level classes <br>
-				<q>Branched sugar arabinon was obtained from British
-Sugar – Mcleary.</q></li>
+					<li> authors do not use high level classes <br>
+					<q>Branched sugar arabinon was obtained from British
+					Sugar – Mcleary.</q></li>
 					<li>authors use synonyms</li>
 					</ol>
-				</section>
+			</section>
 			</section>	
 			<!--section>
 					<h2>Discussion</h2>
@@ -203,13 +234,11 @@ Sugar – Mcleary.</q></li>
 			</sectio-->
 			
 			<section>
-			
 <h4>Conclusion</h4> 
  MIAPE is a good starting point for creating the required vocabulary, but it needs to be further elaborated.<br> 
 <!--h4> as the next step:<h4--> 
   <!--p>we extended the vocabulary by using the Rapid Ontology Creation (ROC+) method and knowledge acquisition method with scientists.</p--> 
 			</section>
-			
 			<section> 
 			<h3>The next step</h3> 
 				<ol>
@@ -222,20 +251,17 @@ Sugar – Mcleary.</q></li>
 				<section style="text-align: left;">
 					<h1>Documentation</h1>
 					<p>
-						- <a href="http://slides.com"> Doctoral consortium paper - ESWC2015</a> <br>
+						- <a href="http://dblp.uni-trier.de/pers/hd/t/Tahvildari:Dena"> Doctoral consortium paper - ESWC2015</a> <br>
 						- <a href="https://github.com/hakimel/reveal.js"> code and data </a>
 					</p>
 				</section>
-
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
-
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -243,9 +269,7 @@ Sugar – Mcleary.</q></li>
 				progress: true,
 				history: true,
 				center: true,
-
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
 				// Optional reveal.js plugins
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
