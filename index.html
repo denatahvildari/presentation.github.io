@@ -28,6 +28,8 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		
+		
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -44,95 +46,95 @@
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
+			
 			<div class="slides">
 				<section>
-					<h3>Annotating the Context of Laboratory Experiments</h3>
-					<h4>a Case in Column Chromatography</h4>
+					<h3> Annotating the Context of Laboratory Experiments</h3>
+					<h4> a Case in Column Chromatography</h4>
 					<p>
 						<small>Created by <a href="https://www.cs.vu.nl/en/research/business-informatics/phd-students/dena-tahvildari.aspx">Dena Tahvildari</a> </small></p>
 					<p>
-					     <small>PhD Candidate <br> VU Amsterdam and Wageningen UR</small> 
+						<small>PhD Candidate <br> VU Amsterdam and Wageningen UR</small> 
 					</p>
 					<p> 
-						<small> Supervisors: Prof. Guus Schreiber, Prof. Jan Top</small>
+						<small> Collaborators: Anne vissers, Guus Schreiber, Jan Top</small> 
 					</p> 
 					<p> 
-					     <small>email: d.tahvildari@vu.nl</small> 
+					    <small>email: d.tahvildari@vu.nl</small>  
 					</P>      
 				</section>
 	
-			<!--section>
-					<h3>We are exploring the role of semantics on authoring a reproducible methodology reports</h3>
-					<p>
-						<ol>
-						<li>Motivation</li>
-						<li>Research question</li>
-						<li>Method</li>
-						<li>Results</li>
-						<li>Discussion</li> 
-					</ol>
-					</p>
-			</section-->
 <!-- Example of nested vertical slides -->
 		
+<section>
+	<img  src="labrep.jpeg" alt="reproducibility ingredients" height="430" width="600">
+	 </section>
+	 
+	 <section>
+	 <img  src="badmethod.jpeg" alt="annotated method" height="600" width="420">
+	 </section>
+	
 	<section>
-	<img  src="labrep.jpeg" alt="annotated method" height="430" width="600">
+	 <img  src="protocols.jpeg" alt="annotated method" height="600" width="420">
 	</section>
-		
-		
-		
+	 
 		<section>
-				<section>
-					<h4>the quality of laboratory method descriptions</h4>
-					<ol>
-						<li>some of them present insufficient granularity</li>
-						<li>they can be imprecise or ambiguous</li>
-					</ol>
-					<br>
-					</section>
-					<section>
-					<img  src="badmethod.jpeg" alt="annotated method" height="600" width="420">
-					<!--img  style= "vertical-align:top"  src="miape.jpeg" alt="Minimum Information Guidelines for Reporting a Proteomic Experiment." height="300" width="500"-->
-					<br>
-					</section>
-					<section>
-					<p class="fragment grow">The reproducibility of the method is limited</p>
-					</section>
-					<section>
-					<h3>Minimum information guidelines for <br> documentation and report the laboratory experiment</h3> 
-					<ol>
-					<li>they can be imprecise or ambiguous due to the use of natural language</li> 
-					<li>no computational support</li>
-					</ol>
-					<br>
-					</section>
-					<section>
-					<img src="miape.jpeg" alt="Minimum Information Guidelines for Reporting a Proteomic Experiment." height="400" width="600">
-				</section>
-				<section>
-				<p class="fragment grow">Limited use</p> 
-				</section>
-				
-				</section>
-					<section>
-					<p> <font size="6"> Hypothesis is:</font> <br> <br> <!--font color="red", size="7"--> an explicit representation of the reporting guidelines can contribute to the quality of descriptions</font></p>
-					</section>
-				</section>
-				<!--section>
-					<h3>Guidelines for reporting an experiment</h3> 
-					<ol>
-					<li>they can be imprecise or ambiguous due to the use of natural language</li> 
-					<li>no computational support</li>
-					</ol>
-					<img src="miape.jpeg" alt="Minimum Information Guidelines for Reporting a Proteomic Experiment." height="300" width="500">
-				</section-->		
-<!-- Example of nested vertical slides -->
 			<section>
+				   <ol>
+					 	<li>some of them present insufficient granularity</li>
+					 	<li>they can be imprecise or ambiguous</li>
+					</ol>
+					<br>
+					</section>
+					
 					<section>
-						<h2>Main Research Question</h2>
+					<h4>Problem 1</h4>
+					<p class="fragment grow">The reproducibility of the method/protocol is limited</p>
+					</section>	
+		</section>
+	
+	
+	
+<section>
+	<section>
+	<img src="miape.jpeg" alt="Minimum Information Guidelines for Reporting a Proteomic Experiment." height="400" width="500">
+	<br>
+	</section>		
+		<section>
+			<ol>
+			 <li> they can be imprecise or ambiguous</li> 
+				<li> no computational support</li>
+				   </ol>
+					<br>
+		</section>
+	<section>
+			<h4>Problem 2</h4>
+			<p class="fragment grow"> <font size="6">the use of reporting guidelines is limited</font></p> 
+	</section>
+
+</section>
+
+<section>
+<h4>Related Work</h4>
+
+
+</section>
+
+<section>
+<h4>Solution 1</h4>
+<p> Annotative authoring <br>
+Meta-data suggestion applications</p>
+</section>
+					<section>
+						<h3>Main Research Question</h3>
 						<p class="fragment grow">Can a formal representation of reporting guidelines contribute to the quality of the laboratory method description? </p> 
 						<br>
 					</section>
+				
+				<section>
+				<h4>Hypothesis: </h4>
+					 <p>Laboratory reporting guidelines can be formalised using ontologies.</p> 
+				</section>
 					<section>
 						<p class="fragment grow"> Can MIAPE reporting guidelines be used as a knowledge acquisition source to create ontology?</p>
 					</section>
@@ -142,32 +144,30 @@
 					<h3>Method</h3>
 					<ol>
 						<li> select a use case -- MIAPE-CC, </li>
-						<li> manually create vocabulary from MIAPE-CC reporting guidelines,</li> 
+						<li> create vocabulary from MIAPE-CC reporting guidelines,</li> 
 						<li> create a corpus: collect "material and method sections" from publications,</li>
 						<li> measure the occurrence of extracted terms in the material and method sections,</li>  
 					</ol>
 			</section>
 			<section>
-				<h3>Case description</h3>
 				<p>Column chromatography experiment</p>
 					<img src="hplc.jpg" alt="Components of a chromtographic process." height="250" width="500">
 				</section>
 				
 				<section>
-				<ol>
-				<li>  7 classes were identified</li>
-	            <li>  in total 83 terms were collected</li>
-	            </ol>
+					<ol>
+						<li> 7 classes were identified.</li>
+	            		<li> 83 terms were collected.</li>
+	            		<li>encoded into RDF format.</li>
+	           		 </ol>
 				</section>
 			
-				<section>
+			<section>
 				<h3> Result</h3>
-	              <ol>
-	              <li>  7 classes were identified</li>
-	              <li>  in total 83 terms were collected</li>
-	              <li>  40 terms never occurred in any of the method description sections (48%).</li>
-<li>43 remaining terms occurred at least in one method section (51%)</li>
-	              </ol>
+	              <ul>
+	              	 <li>  40 terms never occurred in any of the method description sections (48%). </li>
+					 <li>  43 remaining terms occurred at least in one method section (51%). </li>
+	              </ul>
 				</section>
 			<section>				
 					<table border="1" style="width:80%">
@@ -177,27 +177,27 @@
    						 <td><font color= red>occurred </font></td>
   						</tr>
  					 <tr>
-    					<td>general descriptions</td>
+    					<td>general descriptors</td>
    					 	<td>4</td>		
    					 	<td>1</td>
   					</tr>
  					<tr>
-   					 <td>Sample</td>
+   					 <td>sample</td>
    					 <td>9</td>		
   					<td>8</td>
  					</tr>
  					<tr>
-    					<td>Equipment</td>
+    					<td>equipment</td>
    					 	<td>22</td>		
    					 	<td>2</td>
   					</tr>
  					<tr>
-    					<td>Mobile Phase</td>
+    					<td>mobile Phase</td>
    					 	<td>0</td>		
    					 	<td>2</td>
   					</tr>
   					<tr>
-    					<td>Column Run</td>
+    					<td>column run</td>
    					 	<td>0</td>		
    					 	<td>5</td>
   					</tr>
@@ -207,7 +207,7 @@
    					 	<td>6</td>
   					</tr>
   					<tr>
-    					<td>Column output</td>
+    					<td>column output</td>
    					 	<td>13</td>		
    					 	<td>9</td>
   					</tr>
@@ -225,31 +225,30 @@
 					</ol>
 			</section>
 			</section>	
-			<!--section>
-					<h2>Discussion</h2>
-					<ol>
-					<li>Descriptions often refer to another article in which the method is described, particularly for frequently reused methods. </li>
-					<li>Some information may only be mentioned in the title.  For example, the full name of the column may be mentioned in the title, and from then on they will only use the word ‘column’, as it should be clear what sort of column.</li>
-			</ol>
-			</sectio-->
 			
 			<section>
 <h4>Conclusion</h4> 
  MIAPE is a good starting point for creating the required vocabulary, but it needs to be further elaborated.<br> 
-<!--h4> as the next step:<h4--> 
-  <!--p>we extended the vocabulary by using the Rapid Ontology Creation (ROC+) method and knowledge acquisition method with scientists.</p--> 
 			</section>
 			<section> 
-			<h3>The next step</h3> 
+			
+			<h4>The next step</h4> 
 				<ol>
-				<li>complete the vocabulary by involving the domain experts</li>
-				<li>extend the corpus</li>
-				<li>concept frequency measure</li>
+					<li> complete the vocabulary by involving the domain experts,</li>
+					<li> extend the corpus,</li>
+					<li> concept frequency measure,</li>
 				</ol>
 			</section>
 
+<section>
+<h4>work on progress<h4/>
+<img src="formalisation.jpeg" alt="Components of a chromtographic process." height="300" width="500">
+</section>
+
+
+
 				<section style="text-align: left;">
-					<h1>Documentation</h1>
+					<h4>Documentation</h4>
 					<p>
 						- <a href="http://dblp.uni-trier.de/pers/hd/t/Tahvildari:Dena"> Doctoral consortium paper - ESWC2015</a> <br>
 						- <a href="https://github.com/hakimel/reveal.js"> code and data </a>
