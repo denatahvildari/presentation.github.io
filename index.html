@@ -51,17 +51,10 @@
 				<section>
 					<h3> Annotating the Context of Laboratory Experiments</h3>
 					<h4> a Case in Column Chromatography</h4>
-					<p>
-						<small>Created by <a href="https://www.cs.vu.nl/en/research/business-informatics/phd-students/dena-tahvildari.aspx">Dena Tahvildari</a> </small></p>
-					<p>
-						<small>PhD Candidate <br> VU Amsterdam and Wageningen UR</small> 
-					</p>
-					<p> 
-						<small> Collaborators: Anne vissers, Guus Schreiber, Jan Top</small> 
-					</p> 
-					<p> 
-					    <small>email: d.tahvildari@vu.nl</small>  
-					</P>      
+					<p>Created by <a href="https://www.cs.vu.nl/en/research/business-informatics/phd-students/dena-tahvildari.aspx">Dena Tahvildari</a></p>
+					<p>PhD Candidate <br> VU Amsterdam and Wageningen UR</p>
+					<p> Collaborators: Anne vissers, Guus Schreiber, Jan Top</p> 
+					<p> email: d.tahvildari@vu.nl</P>      
 				</section>
 	
 <!-- Example of nested vertical slides -->
@@ -77,11 +70,8 @@
 	<section>
 	 <img  src="protocols.jpeg" alt="annotated method" height="600" width="420">
 	</section>
+	
 	<section>
-	<img src="miape.jpeg" alt="Minimum Information Guidelines for Reporting a Proteomic Experiment." height="600" width="750">
-	</section>
-	 
-		<section>
 			<section>
 				<h4>Problem 1</h4>
 							<p class="fragment grow">The reproducibility of the method/protocol is limited</p>
@@ -94,9 +84,17 @@
 					</ul>
 					<br>
 					</section>
+		</section>
+		
+		<section>
+	<img src="miape.jpeg" alt="Minimum Information Guidelines for Reporting a Proteomic Experiment." height="600" width="750">
+	</section>
+	 
+	 <section>
 		<section>
 			<h4>Problem 2</h4>
 			<p class="fragment grow">the use of reporting guidelines is limited</p>
+			<br>
 		</section>
 		<section>
 					
@@ -105,46 +103,17 @@
 							<li> no computational support</li>
 				  		</ul>
 					<br>
-		</section>
-					
-					
-	</section>
-	
-	
-	
-<!--section>
-	<section>
-	<img src="miape.jpeg" alt="Minimum Information Guidelines for Reporting a Proteomic Experiment." height="400" width="500">
-	<br>
-	</section>		
-		<section>
-			<ol>
-			 <li> they can be imprecise or ambiguous</li> 
-				<li> no computational support</li>
-				   </ol>
-					<br>
-		</section>
-	<section>
-			<h4>Problem 2</h4>
-			<p class="fragment grow"> <font size="6">the use of reporting guidelines is limited</font></p> 
+		</section>			
 	</section>
 
-</section-->
 
 <section>
-<h4>Related Work</h4>
-<img  src="relatedwork.jpeg" alt="annotated method" height="450" width="640">
-
-</section>
-
-<section>
-<h4>Solution 1</h4>
-<p> Annotative authoring <br>
-using Annotations as "suggestion-feature"</p>
+<h4>Solution </h4>
+<p> explicit representation of guidelines and protocols <br> ontologies + NLP</p>
 </section>
 					<section>
 						<h3>Main Research Question</h3>
-						<p class="fragment grow">Can a formal representation of reporting guidelines contribute to the quality of the laboratory method description? </p> 
+						<p class="fragment grow">Can a formal representation of reporting guidelines contribute to the quality of laboratory method descriptions? </p> 
 						<br>
 					</section>
 				
@@ -153,7 +122,7 @@ using Annotations as "suggestion-feature"</p>
 					 <p>Laboratory reporting guidelines can be formalised using ontologies.</p> 
 				</section-->
 					<section>
-						<p class="fragment grow"> Can MIAPE reporting guidelines be used as a knowledge acquisition source to create ontology?</p>
+						<p class="fragment grow"> Can MIAPE reporting guidelines be used as a knowledge acquisition source to create an ontology?</p>
 					</section>
 			  </section> 
 			<section>
@@ -167,17 +136,29 @@ using Annotations as "suggestion-feature"</p>
 					</ol>
 			</section>
 			<section>
-				<p>Column chromatography experiment</p>
-					<img src="hplc.jpg" alt="Components of a chromtographic process." height="250" width="500">
+				
+					<img src="hplc.jpg" alt="Components of a chromtographic process." height="250" width="550">
 				</section>
 				
 				<section>
-					<ul>
-						<li> 7 classes were identified.</li>
+					<ol>
+						<li> 7 classes were defined.</li>
 	            		<li> 83 terms were collected.</li>
-	            		<li>encoded into <a href="https://www.w3.org/RDF/"> RDF</a> format.</li>
-	           		 </ul>
+	            		<li> class hierarchy were defined.</li>
+	            		<li> properties were identified.</li>
+	            		<li> encoded into <a href="https://www.w3.org/RDF/"> RDF</a> format.</li>
+	           		 </ol>
 				</section>
+			
+		<section>
+				<ol>
+					<li> 62 published papers were collected from PubMed.</li>
+						<li> create a corpus</li>
+						<li> prepare the corpus </li>
+					<li> match the labels from the vocabulary to the corpus </li>
+				</ol>
+		</section>
+			
 			
 			<section>
 				<h3> Result</h3>
@@ -235,10 +216,10 @@ using Annotations as "suggestion-feature"</p>
 					<h2>Explanation</h2>
 					<ol>
 					<li> authors do not report on the general information in the method sections </li>
-					<li> authors do not use high level classes <br>
+					<li> authors do not use high level classes -- for example the concept "manufacturer" <br>
 					<q>Branched sugar arabinon was obtained from British
 					Sugar – Mcleary.</q></li>
-					<li>authors use synonyms</li>
+					<li>authors use synonyms - eluent is a synonym for "solutions" is synonym for "mobile phase"</li>
 					</ol>
 			</section>
 			</section>	
@@ -251,16 +232,16 @@ using Annotations as "suggestion-feature"</p>
 			
 			<h4>The next step</h4> 
 				<ol>
-					<li> complete the vocabulary -- ROC+ session</li>
-					<li> extend the corpus,</li>
-					<li> concept frequency measure,</li>
-					<li class="grow fragment">how can the annotations be used as metadata suggestion features in editorial software? </li>
+					<li> complete the vocabulary -- class hierarchy, properties and instances</li>
+					<li> textual corpus ---> sentence segmentation,</li>
+					<li> measure the concept frequency,</li>
+					<li> outlook: use the vocabulary in editorial software</li>
 				</ol>
 			</section>
 
 <section>
-<h4>Solution 2 - Annotating the protocols<h4/>
-<img src="formalisation.jpeg" alt="Components of a chromtographic process." height="300" width="500">
+<h4>Solution - Annotating the protocols -- IN PROGRESS<h4/>
+<img src="formalisation.jpeg" alt="Components of a chromtographic process." height="400" width="650">
 </section>
 				<section style="text-align: left;">
 					<h4>Documentation</h4>
@@ -268,8 +249,26 @@ using Annotations as "suggestion-feature"</p>
 						- <a href="http://dblp.uni-trier.de/pers/hd/t/Tahvildari:Dena"> Doctoral consortium paper - ESWC2015</a> <br>
 						- <a href="http://www.annatator.nl/"> Annotative authoring</a> <br>
 						- <a href="https://github.com/denatahvildari/MIAPE"> code and data </a>
-						
 					</p>
+				</section>
+				<section> 
+				Back up slides
+				</section>
+				<section>
+				<section>
+				<h4>Definitions</h4>
+				<ul>
+					<li>Reproducibility</li>
+					<li>Minimum Information About Proteomic Experiment</li>
+					<li>Ontology</li>
+					
+				</ul>
+				</section>
+				<section>
+<h4>Related Work</h4>
+<img  src="relatedwork.jpeg" alt="annotated method" height="450" width="640">
+
+</section>
 				</section>
 			</div>
 		</div>
